@@ -1,0 +1,222 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*------------------
+ common styles
+-------------------*/
+body{
+    background-color: white;
+    padding:0;
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    max-width:960px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+p{
+    font-size: 16px;
+    color:#6C6C6C;
+    text-align: justify;
+}
+
+/*---------------
+ header styles
+----------------*/
+header{
+    max-width:100%;
+    background-color: #2D25A0;
+    padding:102px 93px 57px 104px;
+}
+
+header .head-section{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+}
+/* .head-section #fix-one{
+    width:323px;
+    height:230px;
+} */
+.head-section #fix-two{
+    width:370px;
+    height:292px;
+}
+#fix-two img{
+    height:285px;
+    width:258px;
+}
+#fix-two:hover img{
+    position:relative;
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+#fix-one h1{
+    font-weight:bold;
+    font-size: 43px;
+}
+.button button{
+    color:white;
+    border: none;
+    background-color: #E02C6D;
+    padding:7px 16px;
+    font-size: 16px;
+}
+button i{
+    margin-left:6px;
+}
+
+
+/*--------------------- 
+ part one styles
+----------------------*/
+main .part-1{
+    width:100%;
+    padding:47px 140px 110px 120px;
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-gap:20px;
+}
+.blog{
+    padding:15px;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
+}
+.blog-img img{
+    max-width:100%;
+}
+.blog-info h2,.trend h2{
+    font-weight: bold;
+    font-size: 28px;
+    color:#18191F;
+    margin:10px 0 16px;
+}
+
+
+/*--------------- 
+ part two styles
+--------------- */
+main .part-2{
+ padding:0px 104px 105px 121px;
+ box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
+}
+.highlight{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid rgba(0,0,0,0.15);
+}
+.highlight .hl-info{
+    width:310px;
+    margin-bottom:30px;
+}
+.hl-info h1{
+    font-size: 32px;
+    font-weight: bold;
+    color:#0A0826;
+}
+.hl-info img{
+    width:100%;
+    height:284px;
+}
+
+
+/*--------------------
+ part3 styles area
+---------------------*/
+main .part-3{
+    margin-top: 50px;
+    padding:0px 50px 50px;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
+}
+.trend ul{
+    list-style-type: circle;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.trend h2{
+    padding:20px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+.trend ul li a{
+    text-decoration: none;
+    color:#E02C6D;
+}
+
+/*--------------------
+ footer area styles
+---------------------*/
+footer{
+    width:322px;
+    margin:0 auto;
+    text-align: center;
+    margin-top:50px;
+}
+.footer-img img{
+    width:100%;
+    
+    height:73px;
+}
+.social-icon i{
+    color:#969BAB;
+    font-size: 23px;
+    margin-right:14px;
+}
+footer p{
+    margin-top: 12px;
+    padding: 0px;
+    text-align: center;
+}
+
+
+
+
+/* -----------------------
+ media query for mobile 
+------------------------*/
+@media only screen and (max-width: 500px){
+    body,header{
+        max-width:100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+    header{
+        padding:112px 66px 61px 16px;
+    }
+    #fix-one{
+        margin-bottom:100px ;
+    }
+    header .head-section{
+        flex-direction: column;
+    }
+    main .part-1{
+        grid-template-columns: 1fr;
+        padding:47px 0px;
+    }
+    main .part-2{
+        padding:0 15px 47px;
+    }
+    .highlight{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .part-3{
+        padding:15px;
+    }
+    .trend ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+/*--------------------
+ media queri tablet
+----------------------*/
+@media only screen and (max-width: 769px) and (min-width: 501px){
+    body,header{
+        max-width:100%;
+        height: auto;
+    }
+    header{
+        padding:112px 66px 61px 16px;
+    }
+}

@@ -33,10 +33,10 @@ header .head-section{
     justify-content: space-between;
     color:white;
 }
-/* .head-section #fix-one{
+.head-section #fix-one{
     width:323px;
     height:230px;
-} */
+}
 .head-section #fix-two{
     width:370px;
     height:292px;

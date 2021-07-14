@@ -4,6 +4,9 @@
 /*------------------
  common styles
 -------------------*/
+html,body{
+    overflow-x: hidden;
+}
 body{
     background-color: white;
     padding:0;
@@ -11,7 +14,6 @@ body{
     font-family:'Poppins', sans-serif;
     max-width:960px;
     margin: 0 auto;
-    overflow-x: hidden;
 }
 p{
     font-size: 16px;
@@ -179,6 +181,7 @@ footer p{
 ------------------------*/
 @media only screen and (max-width: 500px){
     body{
+        position: relative;
         width:100%;
         /* min-width: 100%; */
         height: auto;
@@ -190,12 +193,17 @@ footer p{
         margin: 0;
         height:auto;
     }
-    #fix-one{
-        margin-bottom:100px ;
+    img{
+        max-width: 100%
     }
+    /* #fix-one{
+        margin-bottom:100px ;
+    } */
     header .head-section{
         flex-direction: column;
         justify-content: center;
+        padding:0;
+        margin:0;
     }
     main .part-1{
         grid-template-columns: 1fr;
@@ -216,6 +224,11 @@ footer p{
     .trend ul{
         grid-template-columns: repeat(2,1fr);
     }
+    .footer{
+        max-width: 50%;
+        padding:0;
+        margin:0 auto;
+    }
 }
 
 
@@ -229,11 +242,15 @@ footer p{
         height: auto;
         overflow-x: hidden;
     }
-    header,main{
+    header,main,.head-section{
         max-width:100%;
         padding:0;
     }
+    img{
+        max-width: 100%;
+    }
     #fix-one{
+        width:60%;
         margin-bottom:100px ;
     }
     main .part-1{
